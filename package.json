@@ -10,6 +10,8 @@
     "react": "^15.2.1",
     "react-addons-pure-render-mixin": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-motion": "^0.4.4",
+    "react-swipeable-views": "^0.6.4",
     "react-tap-event-plugin": "^1.0.0"
   }
 }
