@@ -7,6 +7,9 @@ import App from '../imports/ui/App.jsx';
 // for material-ui
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
+// for login
+import '../imports/startup/accounts-config.jsx';
+
 Meteor.startup(() => {
   // material-ui
   // Needed for onTouchTap
