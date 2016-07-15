@@ -1,9 +1,18 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
+import {Meteor} from 'meteor/meteor';
+import {render} from 'react-dom';
 
 import App from '../imports/ui/App.jsx';
 
+// for material-ui
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 Meteor.startup(() => {
-  render(<App />, document.getElementById('render-target'));
+  // material-ui
+  // Needed for onTouchTap
+  // http://stackoverflow.com/a/34015469/988941
+  injectTapEventPlugin();
+
+  render(
+    <App/>, document.getElementById('render-target'));
 });
